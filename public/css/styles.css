@@ -1,0 +1,409 @@
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+}
+
+main {
+  padding-bottom: 30px;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #fff;
+  transition: all .6s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.item :hover {
+  transform: scale(1.02);
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+.item .content {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+
+}
+
+.item .content .btn-delete {
+  position: absolute;
+  color: red;
+  left: 25rem;
+  top: 6rem;
+
+}
+
+.item .content h3 {
+  margin-top: -1rem;
+}
+.item .content h4 {
+  margin-bottom: 50px;
+}
+
+.total .buy {
+  display: flex;
+}
+
+.total .buy h1 {
+  margin-right: 1rem;
+}
+
+.total .buy .bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 10px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.total .buy .bn632-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.total .buy .bn632-hover:focus {
+  outline: none;
+}
+
+.total .buy .bn632-hover.bn22 {
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+.shopping-cart {
+  margin-right: 2rem;
+}
+
+.product_card {
+  display: inline-block;
+  text-align: center;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border: dashed red;
+  border-radius: 25px;
+  background-color: rgb(200, 231, 231);
+}
+
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: lightsteelblue;
+}
+
+
+.sliva1 {
+  background-color: lightsteelblue;
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  z-index: -1;
+}
+
+
+.mogus {
+  text-align: right;
+  height: 86px;
+}
+
+.mogus span {
+  display: table;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.mogus span a {
+  font: "";
+}
+
+.mogus a {
+  text-decoration: none;
+}
+
+.mogus input {
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 200px;
+}
+
+.mogus button {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.mogus img {
+  margin-top: 0px;
+}
+
+.regus input[type=text],
+.regus input[type=email],
+.regus input[type=number],
+.regus input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #dfdddd;
+}
+
+.regus input[type=search],
+.regus input[type=date] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #dfdddd;
+  box-sizing: inherit;
+}
+
+.regus input[type=text]:focus,
+.regus input[type=number]:focus,
+.regus input[type=password]:focus,
+.regus input[type=email]:focus,
+.regus input[type=search]:focus {
+  background-color: rgb(209, 202, 202);
+  outline: none;
+}
+
+.regus input[type="file"] {
+  display: none;
+}
+.file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.regus textarea {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  height: 100px;
+  background: #dfdddd;
+  box-sizing: inherit;
+}
+.regus textarea:focus {
+  background-color: rgb(209, 202, 202);
+  outline: none;
+}
+
+.regus input:focus:invalid {
+  background: rgb(204, 155, 155);
+}
+
+.regus button {
+  background-color: #4fa9dd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  opacity: 0.9;
+}
+
+.regus button:hover {
+  opacity: 1;
+}
+
+.btn-remove {
+  background-color: #dd4f5b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.btn-add {
+  background-color: #4fa9dd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.btn-remove:hover,
+.btn-add:hover {
+  opacity: 1;
+}
+
+.product-properties {
+  text-align: center;
+}
+.product-properties input[type="text"] {
+  width: 35%;
+  padding: 15px;
+  margin: 5px 2.5% 22px 2.5%;
+  display: inline-block;
+  border: none;
+  background: #dfdddd;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.label span {
+  display: inline-flex;
+  padding: .2em;
+  height: 2em;
+  color: white;
+}
+
+.label input {
+  display: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #60729938;
+  padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 600px;
+  /* Could be more or less, depending on screen size */
+}
+
+.sus {
+  height: 190px;
+  width: 150px;
+  position: absolute;
+}
+
+.iteeems td {
+  display: none;
+}
+
+.iteeems td:target {
+  display:contents;
+}
+
+.page-product-params {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.page-product-params dl {
+  align-content: start;
+  color: #345;
+  display: grid;
+  font-size: 14px;
+  grid-column-gap: 12px;
+  grid-row-gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+}
+
+.page-product-params dl>dt {
+  color: #89a;
+  position: relative;
+}
+
+.page-product-params dl>dd {
+  color: #345;
+  margin-left: 0;
+}
+
+.page-product-params dl>dt:before {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px dotted #ccc;
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+}
+
+.page-product-params dl>dt>span {
+  background: #fff;
+  display: inline-block;
+  padding-right: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
