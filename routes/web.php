@@ -33,14 +33,6 @@ Route::get('/catalog', [CatalogController::class, 'catalog']);
 
 Route::get('/product/{id}', [CatalogController::class, 'product']);
 
-Route::view('/vodogrei', 'catalog/vodogrei');
-
-Route::get('/vodogrei/{id}', [Controller::class, 'vodogrei']);
-
-Route::view('/kotelki', 'catalog/kotelki');
-
-Route::get('/kotelki/{id}', [Controller::class, 'kotelki']);
-
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('login_required', [AuthController::class, 'login_required'])->name('login');
