@@ -8,9 +8,9 @@
 
     <table class="stocks-table">
         <tr>
-            <th>Product ID</th>
-            <th>Product Name</th>
-            <th>Quantity</th>
+            <th>ID</th>
+            <th>Название Товара</th>
+            <th>Количество</th>
         </tr>
         <div class="stocks-wrap">
         @foreach ($stocks as $index => $stock)
@@ -36,8 +36,7 @@
        //const x = document.querySelectorAll("govno#"+target.id);
         //val = getElementById(target.id);
         var x = document.getElementsByClassName("govno"+target.id);
-        alert(x[0].value);
-        alert('Товар Updated 👍');
+        alert('Количество товара на складе обновлено до '+x[0].value+' штук 👍');
         xhr.open("GET", "/update_stock/"+target.id+"?value="+x[0].value);
         xhr.send();
          

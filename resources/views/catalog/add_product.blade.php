@@ -31,8 +31,8 @@
         </div>
     </div>
 </form>
-<button class="btn-add">Add</button>
-    <button class="btn-remove">remove</button>
+<div style="text-align: center"><button class="btn-add">Добавить свойство</button>
+    <button class="btn-remove">Удалить свойство</button></div>
 <script>
     var loadFile = function(event) {
         var image = document.getElementById("output");

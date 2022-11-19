@@ -14,7 +14,7 @@
     background-color: #dddddd;
   }
   
-  .stocks-table td:first-child, td:last-child, th:nth-child(2) {
+  .stocks-table td:first-child, td:last-child, th:nth-child(2), th:last-child {
     text-align: center;
   }
 
